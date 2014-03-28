@@ -135,6 +135,8 @@ public:
     void setSpriteLocalPosition( const Vector2& localPosition );
     Vector2 getSpriteLocalPosition( void );
 
+    const SpriteBatchItem::LogicalPosition getSpriteLogicalPosition( void ) const;
+
     void setSpriteAngle( const F32 localAngle );
     F32 getSpriteAngle( void ) const;
 
@@ -183,6 +185,7 @@ public:
 
 protected:
     SpriteBatchItem* createSprite( void );
+    SpriteBatchItem* createSprite( const Vector2* explicitVertices );
     SpriteBatchItem* findSpritePosition( const SpriteBatchItem::LogicalPosition& logicalPosition );
     SpriteBatchItem* findSpriteId( const U32 batchId );
     SpriteBatchItem* findSpriteName( const char* pName );

@@ -72,7 +72,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>../../Lib/zlib;../../Lib/lpng;../../Lib/ljpeg;../../Lib/openal/win32;../../Source;../../Source/persistence/rapidjson/include;../../source/testing/googleTest;../../source/testing/googleTest/include;../../source/testing/googleTest;../../source/testing/googleTest/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../Lib/LeapSDK/include;../../Lib/zlib;../../Lib/lpng;../../Lib/ljpeg;../../Lib/openal/win32;../../Source;../../Source/persistence/rapidjson/include;../../source/testing/googleTest;../../source/testing/googleTest/include;../../source/spine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>TORQUE_DEBUG;TORQUE_DEBUG_GUARD;_CRT_SECURE_NO_DEPRECATE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -96,10 +96,10 @@
       <AdditionalIncludeDirectories>../../Lib/MSPlatformSDK/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>COMCTL32.LIB;COMDLG32.LIB;USER32.LIB;ADVAPI32.LIB;GDI32.LIB;RPCRT4.LIB;WINMM.LIB;WSOCK32.LIB;vfw32.lib;Imm32.lib;unicows.lib;shell32.lib;shlwapi.lib;ole32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Leapd.lib;COMCTL32.LIB;COMDLG32.LIB;USER32.LIB;ADVAPI32.LIB;GDI32.LIB;RPCRT4.LIB;WINMM.LIB;WSOCK32.LIB;vfw32.lib;Imm32.lib;unicows.lib;shell32.lib;shlwapi.lib;ole32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>../../../Torque2D_DEBUG.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>../../Lib/unicode;../../lib/MSPlatformSDK/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>../../lib/LeapSDK/lib/x86;../../Lib/unicode;../../lib/MSPlatformSDK/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMTD;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(IntDir)$(ProjectName).pdb</ProgramDatabaseFile>
@@ -119,7 +119,7 @@
     <ClCompile>
       <Optimization>MinSpace</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>../../Lib/zlib;../../Lib/lpng;../../Lib/ljpeg;../../Lib/openal/win32;../../Source;../../Source/persistence/rapidjson/include;../../source/testing/googleTest;../../source/testing/googleTest/include;../../source/testing/googleTest;../../source/testing/googleTest/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../Lib/LeapSDK/include;../../Lib/zlib;../../Lib/lpng;../../Lib/ljpeg;../../Lib/openal/win32;../../Source;../../Source/persistence/rapidjson/include;../../source/testing/googleTest;../../source/testing/googleTest/include;../../source/spine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>UNICODE;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -144,10 +144,10 @@
       <AdditionalIncludeDirectories>../../Lib/MSPlatformSDK/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>COMCTL32.LIB;COMDLG32.LIB;USER32.LIB;ADVAPI32.LIB;GDI32.LIB;WINMM.LIB;WSOCK32.LIB;vfw32.lib;Imm32.lib;unicows.lib;shell32.lib;shlwapi.lib;ole32.lib;RPCRT4.LIB;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Leap.lib;COMCTL32.LIB;COMDLG32.LIB;USER32.LIB;ADVAPI32.LIB;GDI32.LIB;WINMM.LIB;WSOCK32.LIB;vfw32.lib;Imm32.lib;unicows.lib;shell32.lib;shlwapi.lib;ole32.lib;RPCRT4.LIB;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>../../../Torque2D.exe</OutputFile>
       <SuppressStartupBanner>false</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>../../Lib/unicode;../../Lib/MSPlatformSDK/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>../../lib/LeapSDK/lib/x86;../../Lib/unicode;../../Lib/MSPlatformSDK/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>LIBC;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ProgramDatabaseFile>$(IntDir)$(ProjectName).pdb</ProgramDatabaseFile>
@@ -178,7 +178,7 @@
     <ClCompile>
       <Optimization>MinSpace</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>../../Lib/zlib;../../Lib/lpng;../../Lib/ljpeg;../../Lib/openal/win32;../../Source;../../Source/persistence/rapidjson/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../Lib/LeapSDK/include;../../Lib/zlib;../../Lib/lpng;../../Lib/ljpeg;../../Lib/openal/win32;../../Source;../../Source/persistence/rapidjson/include;../../source/spine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>TORQUE_SHIPPING;UNICODE;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -203,10 +203,10 @@
       <AdditionalIncludeDirectories>../../Lib/MSPlatformSDK/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>COMCTL32.LIB;COMDLG32.LIB;USER32.LIB;ADVAPI32.LIB;GDI32.LIB;WINMM.LIB;WSOCK32.LIB;vfw32.lib;Imm32.lib;unicows.lib;shell32.lib;shlwapi.lib;ole32.lib;RPCRT4.LIB;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Leap.lib;COMCTL32.LIB;COMDLG32.LIB;USER32.LIB;ADVAPI32.LIB;GDI32.LIB;WINMM.LIB;WSOCK32.LIB;vfw32.lib;Imm32.lib;unicows.lib;shell32.lib;shlwapi.lib;ole32.lib;RPCRT4.LIB;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>../../../Torque2D.exe</OutputFile>
       <SuppressStartupBanner>false</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>../../Lib/unicode;../../Lib/MSPlatformSDK/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>../../lib/LeapSDK/lib/x86;../../Lib/unicode;../../Lib/MSPlatformSDK/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>LIBC;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ProgramDatabaseFile>$(IntDir)$(ProjectName).pdb</ProgramDatabaseFile>
@@ -238,6 +238,7 @@
     <ClCompile Include="..\..\source\2d\assets\ParticleAssetEmitter.cc" />
     <ClCompile Include="..\..\source\2d\assets\ParticleAssetField.cc" />
     <ClCompile Include="..\..\source\2d\assets\ParticleAssetFieldCollection.cc" />
+    <ClCompile Include="..\..\source\2d\assets\SkeletonAsset.cc" />
     <ClCompile Include="..\..\source\2d\controllers\AmbientForceController.cc" />
     <ClCompile Include="..\..\source\2d\controllers\BuoyancyController.cc" />
     <ClCompile Include="..\..\source\2d\controllers\core\GroupedSceneController.cc" />
@@ -268,6 +269,7 @@
     <ClCompile Include="..\..\source\2d\sceneobject\SceneObjectSet.cc" />
     <ClCompile Include="..\..\source\2d\sceneobject\Scroller.cc" />
     <ClCompile Include="..\..\source\2d\sceneobject\ShapeVector.cc" />
+    <ClCompile Include="..\..\source\2d\sceneobject\SkeletonObject.cc" />
     <ClCompile Include="..\..\source\2d\sceneobject\Sprite.cc" />
     <ClCompile Include="..\..\source\2d\sceneobject\Trigger.cc" />
     <ClCompile Include="..\..\source\2d\scene\ContactFilter.cc" />
@@ -287,52 +289,52 @@
     <ClCompile Include="..\..\source\assets\referencedAssets.cc" />
     <ClCompile Include="..\..\source\audio\AudioAsset.cc" />
     <ClCompile Include="..\..\source\audio\audio_ScriptBinding.cc" />
-    <ClCompile Include="..\..\source\box2d\Collision\b2BroadPhase.cpp" />
-    <ClCompile Include="..\..\source\box2d\Collision\b2CollideCircle.cpp" />
-    <ClCompile Include="..\..\source\box2d\Collision\b2CollideEdge.cpp" />
-    <ClCompile Include="..\..\source\box2d\Collision\b2CollidePolygon.cpp" />
-    <ClCompile Include="..\..\source\box2d\Collision\b2Collision.cpp" />
-    <ClCompile Include="..\..\source\box2d\Collision\b2Distance.cpp" />
-    <ClCompile Include="..\..\source\box2d\Collision\b2DynamicTree.cpp" />
-    <ClCompile Include="..\..\source\box2d\Collision\b2TimeOfImpact.cpp" />
-    <ClCompile Include="..\..\source\box2d\Collision\Shapes\b2ChainShape.cpp" />
-    <ClCompile Include="..\..\source\box2d\Collision\Shapes\b2CircleShape.cpp" />
-    <ClCompile Include="..\..\source\box2d\Collision\Shapes\b2EdgeShape.cpp" />
-    <ClCompile Include="..\..\source\box2d\Collision\Shapes\b2PolygonShape.cpp" />
-    <ClCompile Include="..\..\source\box2d\Common\b2BlockAllocator.cpp" />
-    <ClCompile Include="..\..\source\box2d\Common\b2Draw.cpp" />
-    <ClCompile Include="..\..\source\box2d\Common\b2Math.cpp" />
-    <ClCompile Include="..\..\source\box2d\Common\b2Settings.cpp" />
-    <ClCompile Include="..\..\source\box2d\Common\b2StackAllocator.cpp" />
-    <ClCompile Include="..\..\source\box2d\Common\b2Timer.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\b2Body.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\b2ContactManager.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\b2Fixture.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\b2Island.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\b2World.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\b2WorldCallbacks.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\Contacts\b2ChainAndCircleContact.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\Contacts\b2ChainAndPolygonContact.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\Contacts\b2CircleContact.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\Contacts\b2Contact.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\Contacts\b2ContactSolver.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\Contacts\b2EdgeAndCircleContact.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\Contacts\b2EdgeAndPolygonContact.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\Contacts\b2PolygonAndCircleContact.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\Contacts\b2PolygonContact.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\Joints\b2DistanceJoint.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\Joints\b2FrictionJoint.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\Joints\b2GearJoint.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\Joints\b2Joint.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\Joints\b2MotorJoint.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\Joints\b2MouseJoint.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\Joints\b2PrismaticJoint.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\Joints\b2PulleyJoint.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\Joints\b2RevoluteJoint.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\Joints\b2RopeJoint.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\Joints\b2WeldJoint.cpp" />
-    <ClCompile Include="..\..\source\box2d\Dynamics\Joints\b2WheelJoint.cpp" />
-    <ClCompile Include="..\..\source\box2d\Rope\b2Rope.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Collision\b2BroadPhase.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Collision\b2CollideCircle.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Collision\b2CollideEdge.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Collision\b2CollidePolygon.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Collision\b2Collision.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Collision\b2Distance.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Collision\b2DynamicTree.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Collision\b2TimeOfImpact.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Collision\Shapes\b2ChainShape.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Collision\Shapes\b2CircleShape.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Collision\Shapes\b2EdgeShape.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Collision\Shapes\b2PolygonShape.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Common\b2BlockAllocator.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Common\b2Draw.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Common\b2Math.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Common\b2Settings.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Common\b2StackAllocator.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Common\b2Timer.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\b2Body.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\b2ContactManager.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\b2Fixture.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\b2Island.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\b2World.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\b2WorldCallbacks.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\Contacts\b2ChainAndCircleContact.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\Contacts\b2ChainAndPolygonContact.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\Contacts\b2CircleContact.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\Contacts\b2Contact.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\Contacts\b2ContactSolver.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\Contacts\b2EdgeAndCircleContact.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\Contacts\b2EdgeAndPolygonContact.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\Contacts\b2PolygonAndCircleContact.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\Contacts\b2PolygonContact.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\Joints\b2DistanceJoint.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\Joints\b2FrictionJoint.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\Joints\b2GearJoint.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\Joints\b2Joint.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\Joints\b2MotorJoint.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\Joints\b2MouseJoint.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\Joints\b2PrismaticJoint.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\Joints\b2PulleyJoint.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\Joints\b2RevoluteJoint.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\Joints\b2RopeJoint.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\Joints\b2WeldJoint.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Dynamics\Joints\b2WheelJoint.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Rope\b2Rope.cpp" />
     <ClCompile Include="..\..\source\collection\bitTables.cc" />
     <ClCompile Include="..\..\source\collection\hashTable.cc" />
     <ClCompile Include="..\..\source\collection\nameTags.cpp" />
@@ -404,6 +406,8 @@
     <ClCompile Include="..\..\source\gui\language\lang.cc" />
     <ClCompile Include="..\..\source\gui\messageVector.cc" />
     <ClCompile Include="..\..\source\input\actionMap.cc" />
+    <ClCompile Include="..\..\source\input\leapMotion\leapMotionManager.cc" />
+    <ClCompile Include="..\..\source\input\leapMotion\leapMotionUtil.cpp" />
     <ClCompile Include="..\..\source\io\bitStream.cc" />
     <ClCompile Include="..\..\source\io\bufferStream.cc" />
     <ClCompile Include="..\..\source\io\fileObject.cc" />
@@ -429,6 +433,7 @@
     <ClCompile Include="..\..\source\io\zip\zipSubStream.cc" />
     <ClCompile Include="..\..\source\io\zip\zipTempStream.cc" />
     <ClCompile Include="..\..\source\math\math_ScriptBinding.cc" />
+    <ClCompile Include="..\..\source\math\mPoint.cpp" />
     <ClCompile Include="..\..\source\math\rectClipper.cpp" />
     <ClCompile Include="..\..\source\memory\dataChunker.cc" />
     <ClCompile Include="..\..\source\memory\frameAllocator_ScriptBinding.cc" />
@@ -573,6 +578,28 @@
     <ClCompile Include="..\..\source\sim\SimObjectList.cc" />
     <ClCompile Include="..\..\source\sim\simSerialize.cpp" />
     <ClCompile Include="..\..\source\sim\simSet.cc" />
+    <ClCompile Include="..\..\source\spine\Animation.c" />
+    <ClCompile Include="..\..\source\spine\AnimationState.c" />
+    <ClCompile Include="..\..\source\spine\AnimationStateData.c" />
+    <ClCompile Include="..\..\source\spine\Atlas.c" />
+    <ClCompile Include="..\..\source\spine\AtlasAttachmentLoader.c" />
+    <ClCompile Include="..\..\source\spine\Attachment.c" />
+    <ClCompile Include="..\..\source\spine\AttachmentLoader.c" />
+    <ClCompile Include="..\..\source\spine\Bone.c" />
+    <ClCompile Include="..\..\source\spine\BoneData.c" />
+    <ClCompile Include="..\..\source\spine\BoundingBoxAttachment.c" />
+    <ClCompile Include="..\..\source\spine\Event.c" />
+    <ClCompile Include="..\..\source\spine\EventData.c" />
+    <ClCompile Include="..\..\source\spine\extension.c" />
+    <ClCompile Include="..\..\source\spine\Json.c" />
+    <ClCompile Include="..\..\source\spine\RegionAttachment.c" />
+    <ClCompile Include="..\..\source\spine\Skeleton.c" />
+    <ClCompile Include="..\..\source\spine\SkeletonBounds.c" />
+    <ClCompile Include="..\..\source\spine\SkeletonData.c" />
+    <ClCompile Include="..\..\source\spine\SkeletonJson.c" />
+    <ClCompile Include="..\..\source\spine\Skin.c" />
+    <ClCompile Include="..\..\source\spine\Slot.c" />
+    <ClCompile Include="..\..\source\spine\SlotData.c" />
     <ClCompile Include="..\..\source\string\findMatch.cc" />
     <ClCompile Include="..\..\source\string\stringBuffer.cc" />
     <ClCompile Include="..\..\source\string\stringStack.cc" />
@@ -625,6 +652,8 @@
     <ClInclude Include="..\..\source\2d\assets\ParticleAssetField.h" />
     <ClInclude Include="..\..\source\2d\assets\ParticleAssetFieldCollection.h" />
     <ClInclude Include="..\..\source\2d\assets\ParticleAsset_ScriptBinding.h" />
+    <ClInclude Include="..\..\source\2d\assets\SkeletonAsset.h" />
+    <ClInclude Include="..\..\source\2d\assets\SkeletonAsset_ScriptBinding.h" />
     <ClInclude Include="..\..\source\2d\controllers\AmbientForceController.h" />
     <ClInclude Include="..\..\source\2d\controllers\AmbientForceController_ScriptBinding.h" />
     <ClInclude Include="..\..\source\2d\controllers\BuoyancyController.h" />
@@ -679,6 +708,8 @@
     <ClInclude Include="..\..\source\2d\sceneobject\Scroller_ScriptBinding.h" />
     <ClInclude Include="..\..\source\2d\sceneobject\ShapeVector.h" />
     <ClInclude Include="..\..\source\2d\sceneobject\ShapeVector_ScriptBinding.h" />
+    <ClInclude Include="..\..\source\2d\sceneobject\SkeletonObject.h" />
+    <ClInclude Include="..\..\source\2d\sceneobject\SkeletonObject_ScriptBinding.h" />
     <ClInclude Include="..\..\source\2d\sceneobject\Sprite.h" />
     <ClInclude Include="..\..\source\2d\sceneobject\Sprite_ScriptBinding.h" />
     <ClInclude Include="..\..\source\2d\sceneobject\Trigger.h" />
@@ -719,53 +750,53 @@
     <ClInclude Include="..\..\source\assets\tamlAssetReferencedUpdateVisitor.h" />
     <ClInclude Include="..\..\source\assets\tamlAssetReferencedVisitor.h" />
     <ClInclude Include="..\..\source\audio\AudioAsset.h" />
-    <ClInclude Include="..\..\source\box2d\Box2D.h" />
-    <ClInclude Include="..\..\source\box2d\Collision\b2BroadPhase.h" />
-    <ClInclude Include="..\..\source\box2d\Collision\b2Collision.h" />
-    <ClInclude Include="..\..\source\box2d\Collision\b2Distance.h" />
-    <ClInclude Include="..\..\source\box2d\Collision\b2DynamicTree.h" />
-    <ClInclude Include="..\..\source\box2d\Collision\b2TimeOfImpact.h" />
-    <ClInclude Include="..\..\source\box2d\Collision\Shapes\b2ChainShape.h" />
-    <ClInclude Include="..\..\source\box2d\Collision\Shapes\b2CircleShape.h" />
-    <ClInclude Include="..\..\source\box2d\Collision\Shapes\b2EdgeShape.h" />
-    <ClInclude Include="..\..\source\box2d\Collision\Shapes\b2PolygonShape.h" />
-    <ClInclude Include="..\..\source\box2d\Collision\Shapes\b2Shape.h" />
-    <ClInclude Include="..\..\source\box2d\Common\b2BlockAllocator.h" />
-    <ClInclude Include="..\..\source\box2d\Common\b2Draw.h" />
-    <ClInclude Include="..\..\source\box2d\Common\b2GrowableStack.h" />
-    <ClInclude Include="..\..\source\box2d\Common\b2Math.h" />
-    <ClInclude Include="..\..\source\box2d\Common\b2Settings.h" />
-    <ClInclude Include="..\..\source\box2d\Common\b2StackAllocator.h" />
-    <ClInclude Include="..\..\source\box2d\Common\b2Timer.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\b2Body.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\b2ContactManager.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\b2Fixture.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\b2Island.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\b2TimeStep.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\b2World.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\b2WorldCallbacks.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\Contacts\b2ChainAndCircleContact.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\Contacts\b2ChainAndPolygonContact.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\Contacts\b2CircleContact.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\Contacts\b2Contact.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\Contacts\b2ContactSolver.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\Contacts\b2EdgeAndCircleContact.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\Contacts\b2EdgeAndPolygonContact.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\Contacts\b2PolygonAndCircleContact.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\Contacts\b2PolygonContact.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\Joints\b2DistanceJoint.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\Joints\b2FrictionJoint.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\Joints\b2GearJoint.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\Joints\b2Joint.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\Joints\b2MotorJoint.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\Joints\b2MouseJoint.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\Joints\b2PrismaticJoint.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\Joints\b2PulleyJoint.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\Joints\b2RevoluteJoint.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\Joints\b2RopeJoint.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\Joints\b2WeldJoint.h" />
-    <ClInclude Include="..\..\source\box2d\Dynamics\Joints\b2WheelJoint.h" />
-    <ClInclude Include="..\..\source\box2d\Rope\b2Rope.h" />
+    <ClInclude Include="..\..\source\Box2D\Box2D.h" />
+    <ClInclude Include="..\..\source\Box2D\Collision\b2BroadPhase.h" />
+    <ClInclude Include="..\..\source\Box2D\Collision\b2Collision.h" />
+    <ClInclude Include="..\..\source\Box2D\Collision\b2Distance.h" />
+    <ClInclude Include="..\..\source\Box2D\Collision\b2DynamicTree.h" />
+    <ClInclude Include="..\..\source\Box2D\Collision\b2TimeOfImpact.h" />
+    <ClInclude Include="..\..\source\Box2D\Collision\Shapes\b2ChainShape.h" />
+    <ClInclude Include="..\..\source\Box2D\Collision\Shapes\b2CircleShape.h" />
+    <ClInclude Include="..\..\source\Box2D\Collision\Shapes\b2EdgeShape.h" />
+    <ClInclude Include="..\..\source\Box2D\Collision\Shapes\b2PolygonShape.h" />
+    <ClInclude Include="..\..\source\Box2D\Collision\Shapes\b2Shape.h" />
+    <ClInclude Include="..\..\source\Box2D\Common\b2BlockAllocator.h" />
+    <ClInclude Include="..\..\source\Box2D\Common\b2Draw.h" />
+    <ClInclude Include="..\..\source\Box2D\Common\b2GrowableStack.h" />
+    <ClInclude Include="..\..\source\Box2D\Common\b2Math.h" />
+    <ClInclude Include="..\..\source\Box2D\Common\b2Settings.h" />
+    <ClInclude Include="..\..\source\Box2D\Common\b2StackAllocator.h" />
+    <ClInclude Include="..\..\source\Box2D\Common\b2Timer.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\b2Body.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\b2ContactManager.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\b2Fixture.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\b2Island.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\b2TimeStep.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\b2World.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\b2WorldCallbacks.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\Contacts\b2ChainAndCircleContact.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\Contacts\b2ChainAndPolygonContact.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\Contacts\b2CircleContact.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\Contacts\b2Contact.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\Contacts\b2ContactSolver.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\Contacts\b2EdgeAndCircleContact.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\Contacts\b2EdgeAndPolygonContact.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\Contacts\b2PolygonAndCircleContact.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\Contacts\b2PolygonContact.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\Joints\b2DistanceJoint.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\Joints\b2FrictionJoint.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\Joints\b2GearJoint.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\Joints\b2Joint.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\Joints\b2MotorJoint.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\Joints\b2MouseJoint.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\Joints\b2PrismaticJoint.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\Joints\b2PulleyJoint.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\Joints\b2RevoluteJoint.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\Joints\b2RopeJoint.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\Joints\b2WeldJoint.h" />
+    <ClInclude Include="..\..\source\Box2D\Dynamics\Joints\b2WheelJoint.h" />
+    <ClInclude Include="..\..\source\Box2D\Rope\b2Rope.h" />
     <ClInclude Include="..\..\source\collection\bitMatrix.h" />
     <ClInclude Include="..\..\source\collection\bitSet.h" />
     <ClInclude Include="..\..\source\collection\bitTables.h" />
@@ -878,6 +909,10 @@
     <ClInclude Include="..\..\source\gui\messageVector.h" />
     <ClInclude Include="..\..\source\input\actionMap.h" />
     <ClInclude Include="..\..\source\input\actionMap_ScriptBinding.h" />
+    <ClInclude Include="..\..\source\input\leapMotion\leapMotionConstants.h" />
+    <ClInclude Include="..\..\source\input\leapMotion\leapMotionManager.h" />
+    <ClInclude Include="..\..\source\input\leapMotion\LeapMotionManager_ScriptBinding.h" />
+    <ClInclude Include="..\..\source\input\leapMotion\leapMotionUtil.h" />
     <ClInclude Include="..\..\source\io\bitStream.h" />
     <ClInclude Include="..\..\source\io\bufferStream.h" />
     <ClInclude Include="..\..\source\io\fileObject.h" />
@@ -1123,6 +1158,29 @@
     <ClInclude Include="..\..\source\sim\simSerialize_ScriptBinding.h" />
     <ClInclude Include="..\..\source\sim\simSet.h" />
     <ClInclude Include="..\..\source\sim\simSet_ScriptBinding.h" />
+    <ClInclude Include="..\..\source\spine\Animation.h" />
+    <ClInclude Include="..\..\source\spine\AnimationState.h" />
+    <ClInclude Include="..\..\source\spine\AnimationStateData.h" />
+    <ClInclude Include="..\..\source\spine\Atlas.h" />
+    <ClInclude Include="..\..\source\spine\AtlasAttachmentLoader.h" />
+    <ClInclude Include="..\..\source\spine\Attachment.h" />
+    <ClInclude Include="..\..\source\spine\AttachmentLoader.h" />
+    <ClInclude Include="..\..\source\spine\Bone.h" />
+    <ClInclude Include="..\..\source\spine\BoneData.h" />
+    <ClInclude Include="..\..\source\spine\BoundingBoxAttachment.h" />
+    <ClInclude Include="..\..\source\spine\Event.h" />
+    <ClInclude Include="..\..\source\spine\EventData.h" />
+    <ClInclude Include="..\..\source\spine\extension.h" />
+    <ClInclude Include="..\..\source\spine\Json.h" />
+    <ClInclude Include="..\..\source\spine\RegionAttachment.h" />
+    <ClInclude Include="..\..\source\spine\Skeleton.h" />
+    <ClInclude Include="..\..\source\spine\SkeletonBounds.h" />
+    <ClInclude Include="..\..\source\spine\SkeletonData.h" />
+    <ClInclude Include="..\..\source\spine\SkeletonJson.h" />
+    <ClInclude Include="..\..\source\spine\Skin.h" />
+    <ClInclude Include="..\..\source\spine\Slot.h" />
+    <ClInclude Include="..\..\source\spine\SlotData.h" />
+    <ClInclude Include="..\..\source\spine\spine.h" />
     <ClInclude Include="..\..\source\string\findMatch.h" />
     <ClInclude Include="..\..\source\string\stringBuffer.h" />
     <ClInclude Include="..\..\source\string\stringBuffer_ScriptBinding.h" />

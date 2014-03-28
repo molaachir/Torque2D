@@ -384,14 +384,14 @@ bool GuiCanvas::processInputEvent(const InputEvent *event)
 
          if (event->objType == SI_XAXIS)
          {
-            pt.x += (event->fValue * mPixelsPerMickey);
+            pt.x += (event->fValues[0] * mPixelsPerMickey);
             cursorPt.x = (F32)getMax(0, getMin((S32)pt.x, mBounds.extent.x - 1));
             if (oldpt.x != S32(cursorPt.x))
                moved = true;
          }
          else
          {
-            pt.y += (event->fValue * mPixelsPerMickey);
+            pt.y += (event->fValues[0] * mPixelsPerMickey);
             cursorPt.y = (F32)getMax(0, getMin((S32)pt.y, mBounds.extent.y - 1));
             if (oldpt.y != S32(cursorPt.y))
                moved = true;
@@ -425,7 +425,7 @@ bool GuiCanvas::processInputEvent(const InputEvent *event)
          mLastEvent.mousePoint.y = S32( cursorPt.y );
          mLastEvent.eventID = 0;
 
-            if ( event->fValue < 0.0f )
+            if ( event->fValues[0] < 0.0f )
             rootMouseWheelDown( mLastEvent );
             else
             rootMouseWheelUp( mLastEvent );
@@ -1163,7 +1163,7 @@ void GuiCanvas::renderFrame(bool preRenderOnly, bool bufferSwap /* = true */)
 {
    PROFILE_START(CanvasPreRender);
 
-#if !defined TORQUE_OS_IOS && !defined TORQUE_OS_ANDROID
+#if !defined TORQUE_OS_IOS && !defined TORQUE_OS_ANDROID && !defined TORQUE_OS_EMSCRIPTEN
     
    if(mRenderFront)
       glDrawBuffer(GL_FRONT);
@@ -1297,7 +1297,7 @@ void GuiCanvas::renderFrame(bool preRenderOnly, bool bufferSwap /* = true */)
       //temp draw the mouse
       if (cursorON && mShowCursor && !mouseCursor)
       {
-#if defined(TORQUE_OS_IOS) || defined(TORQUE_OS_ANDROID)
+#if defined(TORQUE_OS_IOS) || defined(TORQUE_OS_ANDROID) || defined(TORQUE_OS_EMSCRIPTEN)
          glColor4ub(255, 0, 0, 255);
          GLfloat vertices[] = {
               (GLfloat)(cursorPt.x),(GLfloat)(cursorPt.y),
